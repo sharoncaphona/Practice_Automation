@@ -5,7 +5,8 @@ from playwright.sync_api import sync_playwright
 def test_day_01():
     with sync_playwright() as p:
         #Open the chrome browser
-        browser = p.chromium.launch(headless=False)
+        # browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
 
         #open a new page
         page = browser.new_page()

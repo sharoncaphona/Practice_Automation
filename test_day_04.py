@@ -3,7 +3,8 @@ from playwright.sync_api import sync_playwright, expect
 def test_day_04():
     with sync_playwright() as p:
         # Open the chromium browser
-        browser = p.chromium.launch(headless=False)
+        # browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
 
         # Open a new page
         page = browser.new_page()
